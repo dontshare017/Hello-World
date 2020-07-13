@@ -5,7 +5,7 @@ UserName= input()
 print('Alrighty, ' + UserName + ', I want to introduce you to a game.')
 print('''It's really easy. I have a number in mind, it could be anywhere between 1-20. You have to guess the number
 within 7 tries. That's plenty of chances.''')
-print('If you dont get it then you are a little dumbass >:^).')
+print('If you dont get it then you are a little dummy >:^).')
 print('Now lets begin.')
 
 import random
@@ -28,7 +28,7 @@ for NumberofTries in range(1,8):
 if int(guesses)== secretNumber and NumberofTries == 7:
     print('Well well well, gotta say, thats much better than I expected, ' + UserName + '.')
     print('You guessed the number in ' + str(NumberofTries) + ' tries. Nice Job.')
-    print('Now close this goddamn program and get a life.')
+    print('Now close this program and get a life.')
 elif int(guesses) == secretNumber and NumberofTries < 7:
     print('Excuse me?? How can you guess it in just ' + str(NumberofTries) + ' times?? @Harvard please accept')
 else:
