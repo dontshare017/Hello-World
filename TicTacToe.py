@@ -88,15 +88,16 @@ def start():
                 print('Game over! Looks like no one won!')
                 break
 
-    print('A round is over. Do you want to play again? (Y/N)')
-    playerChoice = input()
-    if str(playerChoice) == 'Y':
-        board = {'1': ' ', '2': ' ', '3': ' ',
-                 '4': ' ', '5': ' ', '6': ' ',
-                 '7': ' ', '8': ' ', '9': ' '}
-        start()
-    elif str(playerChoice) != 'N' or str(playerChoice) == 'Y':
-        print('You did not enter a valid answer.')
+start()
 
-if __name__ == "__main__":
+print('A round is over. Do you want to play again? (Y/N)')
+playerChoice = input()
+if str(playerChoice) == 'Y':
+    board = {'1': ' ', '2': ' ', '3': ' ',
+             '4': ' ', '5': ' ', '6': ' ',
+             '7': ' ', '8': ' ', '9': ' '}
     start()
+elif str(playerChoice) != 'N' or str(playerChoice) == 'Y':
+    print('You did not enter a valid answer.')
+
+input = raw_input()
