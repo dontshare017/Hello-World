@@ -131,7 +131,6 @@ def start():
         else:
             print('Game over! Looks like no one won!')
 
-
 start()
 
 print('A round is over. Do you want to play again? (Y/N)')
@@ -141,7 +140,7 @@ if str(playerChoice) == 'Y':
              '4': ' ', '5': ' ', '6': ' ',
              '7': ' ', '8': ' ', '9': ' '}
     start()
-
+    input()
 elif str(playerChoice) == 'N':
     print('Alrighty! Have a good day!')
     input(' ')
@@ -154,7 +153,7 @@ elif str(playerChoice) != 'N' and str(playerChoice) != 'Y':
                      '4': ' ', '5': ' ', '6': ' ',
                      '7': ' ', '8': ' ', '9': ' '}
             start()
-            os.system('pause')
+            input()
         elif str(playerChoice) == 'N':
             input('Sad to see you go :(, how about you!?')
             print('Alrighty! Have a good day!')
